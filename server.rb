@@ -1,5 +1,5 @@
 require 'sinatra'
 
 get '/' do
-  File.read(File.join('public','portfolio-classic.html'))
+  File.read(File.join('public','index.html'))
 end
