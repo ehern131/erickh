@@ -15,3 +15,6 @@ end
 get '/myversion' do
   File.read(File.join('public','myversion.html'))
 end
+get '/myversion2' do
+  File.read(File.join('public','myversion2.html'))
+end
