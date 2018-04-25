@@ -6,6 +6,12 @@ end
 get '/index' do
   File.read(File.join('public','index.html'))
 end
+get '/portfolio' do
+  File.read(File.join('public','index.html'))
+end
+get '/work' do
+  File.read(File.join('public','index.html'))
+end
 get '/portfolio-classic' do
   File.read(File.join('public','portfolio-classic.html'))
 end
@@ -14,7 +20,4 @@ get '/about-bigbold' do
 end
 get '/myversion' do
   File.read(File.join('public','myversion.html'))
-end
-get '/myversion2' do
-  File.read(File.join('public','myversion2.html'))
 end
