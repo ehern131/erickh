@@ -3958,7 +3958,7 @@ div[class*='spacer-'] + h1, div[class*='spacer-'] + h2, div[class*='spacer-'] + 
 
 /* DESKTOP LOGO SIZE (replace the 30px with your custom logo height) */
 header #logo .text-logo { line-height: 30px; }
-#header #logo img { height: 40px; }
+#header #logo img { height: 45px; }
 #header-actions { top: calc(160px + 30px); }
 #header-actions-overlay { top: calc(160px + 30px); }
 header #header-actions-overlay::after { top: calc(-160px - 30px); }
