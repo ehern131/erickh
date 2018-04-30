@@ -1,5 +1,7 @@
 require 'sinatra'
 
+
+# WORK INDEX
 get '/' do
   File.read(File.join('public','index.html'))
 end
@@ -12,6 +14,13 @@ end
 get '/work' do
   File.read(File.join('public','index.html'))
 end
+
+# SKY FINANCIAL
+get '/skyfinancial' do
+  File.read(File.join('public','skyfinancial.html'))
+end
+
+# TEST PAGES
 get '/portfolio-classic' do
   File.read(File.join('public','portfolio-classic.html'))
 end
