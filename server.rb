@@ -15,10 +15,18 @@ get '/work' do
   File.read(File.join('public','index.html'))
 end
 
+
 # SKY FINANCIAL
 get '/skyfinancial' do
   File.read(File.join('public','skyfinancial.html'))
 end
+
+
+# QUALITY CRUISES
+get '/qualitycruises' do
+  File.read(File.join('public','qualitycruises.html'))
+end
+
 
 # TEST PAGES
 get '/portfolio-classic' do
