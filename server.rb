@@ -26,6 +26,10 @@ end
 get '/qualitycruises' do
   File.read(File.join('public','qualitycruises.html'))
 end
+# QUALITY CRUISES
+get '/qualitycruises2' do
+  File.read(File.join('public','qualitycruises2.html'))
+end
 
 
 # TEST PAGES
