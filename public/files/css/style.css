@@ -3968,7 +3968,7 @@ header #header-actions-overlay::after { top: calc(-160px - 30px); }
 #single-share.fixed { top: calc(160px + 30px); }
 
 #header:not(.sticky) + #hero-and-body #hero.hero-fullscreen + #page-body { margin-top:  calc(0px - 160px - 30px); }
-#header:not(.sticky) + #hero-and-body #hero.hero-fullscreen { top: calc(0px - 160px - 30px); }
+#header:not(.sticky) + #hero-and-body #hero.hero-fullscreen { top: calc(0px - 160px - 45px); }
 #header.sticky + #hero-and-body #hero:not(.hero-fullscreen) { margin-top: calc(0px + 160px + 30px); }
 #header.sticky + #hero-and-body > #page-body:first-child { margin-top: calc(0px + 160px + 30px); }
 #hero.hero-fullscreen #page-title { padding-top: calc(160px + 30px) !important; }
