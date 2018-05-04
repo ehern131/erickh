@@ -1132,9 +1132,10 @@ header #header-actions-overlay::after {
 	transition-delay: 0.4s;
 	}
 
-	#merchant-portal {
-		padding-top: 30px;
+	#merchant-portal, #lease-management-system {
+		padding-top: 50px;
 	}
+
 
 #header-actions-overlay .action-close::after, #header-actions-overlay .action-close::before {
 	content: "";
