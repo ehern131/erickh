@@ -742,6 +742,11 @@ small a {
 	border-bottom-width: 1px !important;
 	}
 
+	hr {
+		border-width: .5px;
+		margin-top: 110px;
+	}
+
 mark {
 	background: #000000;
 	color: #ffffff;
