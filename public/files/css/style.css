@@ -759,6 +759,29 @@ mark {
 	height: 400px;
 }
 
+$height: 2.8em;
+$width: 10em;
+$button-color: #EE3769;
+
+@mixin center {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+*,*:before,*:after{
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
+
 
 /*----------------------------------------------
 
