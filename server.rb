@@ -35,7 +35,7 @@ get '/qualitycruises2' do
 end
 
 
-# TEST PAGES
+# TEST PAGES (FUTURE TEMPLATE)
 get '/portfolio-classic' do
   File.read(File.join('public','portfolio-classic.html'))
 end
