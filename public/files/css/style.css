@@ -626,11 +626,6 @@ ul.biglist li, ol.biglist li {
 
 ul li:first-child, ol li:first-child { margin-top: 0px; }
 
-#resume {
-	margin-top: 30px!important;
-	text-decoration: none!important;
-	color: rgb(49, 143, 230)!important;
-}
 
 
 /* Others
