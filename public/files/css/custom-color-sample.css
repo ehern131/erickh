@@ -1,19 +1,19 @@
 
 
 /* -----------------------------------------------------------------------------------
-	
-	CUSTOM COLOR
-	___________
-	
-	Copy this to your custom css file if you want to use any custom color.
-	You can of course add the color to even more elements than just the ones which are listed below
+
+CUSTOM COLOR
+___________
+
+Copy this to your custom css file if you want to use any custom color.
+You can of course add the color to even more elements than just the ones which are listed below
 
 ----------------------------------------------------------------------------------- */
 
 .colored { color: #1dcbe5; }
-			
+
 .filter-icon:hover span, .filter-icon:hover span::after, .filter-icon:hover span::before,
-#header-actions-overlay .action-close:hover::after, #header-actions-overlay .action-close:hover::before 
+#header-actions-overlay .action-close:hover::after, #header-actions-overlay .action-close:hover::before
 { background: #1dcbe5; }
 
 .search:hover, .text-light .search:hover,
@@ -24,7 +24,7 @@
 a:hover,
 .text-light a:hover, a.text-light:hover, .text-dark a.text-light:hover { color: #1dcbe5; }
 
-p a:not(.entry-navigation__item):not(.post-edit-link):not(.fancybox):not(.button):not(.image-text-link), 
+p a:not(.entry-navigation__item):not(.post-edit-link):not(.fancybox):not(.button):not(.image-text-link),
 .inline-video:hover::before, .inline-lightcase:hover::before { border-color: #1dcbe5; }
 
 h1:not(.product-name) a, h2:not(.product-name) a, h3:not(.product-name) a, h4:not(.product-name) a, h5:not(.product-name) a, h6:not(.product-name) a,
@@ -43,7 +43,7 @@ h1:not(.product-name) a, h2:not(.product-name) a, h3:not(.product-name) a, h4:no
 nav#main-nav ul > li > a::after, #menu ~ #header-actions-overlay .action-overlay .category-list li a::after { background: #1dcbe5 !important; }
 
 /* Loader icon */
-body:not(.loader-dot) .loader-icon::after, 
+body:not(.loader-dot) .loader-icon::after,
 body.loader-dot .loader-icon::after,
 .load-isotope .load-isotope-icon:before,
 body:not(.loader-dot) #lightcase-loading::after,
