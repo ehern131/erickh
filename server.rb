@@ -16,7 +16,15 @@ get '/work' do
 end
 
 
-# SKY FINANCIAL
+# MOLLIE FINANCIAL LEASE MANAGEMENT SYSTEM
+get '/molliefinancial' do
+  File.read(File.join('public','molliefinancial.html'))
+end
+get '/mollie' do
+  File.read(File.join('public','molliefinancial.html'))
+end
+
+# SKY FINANCIAL MERCHANT PORTAL
 get '/skyfinancial' do
   File.read(File.join('public','skyfinancial.html'))
 end
