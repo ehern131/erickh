@@ -16,7 +16,7 @@ get '/work' do
 end
 
 
-# MOLLIE FINANCIAL LEASE MANAGEMENT SYSTEM
+# MOLLIE FINANCIAL LEASE MANAGEMENT SYSTEM (LMS)
 get '/molliefinancial' do
   File.read(File.join('public','molliefinancial.html'))
 end
@@ -24,7 +24,8 @@ get '/mollie' do
   File.read(File.join('public','molliefinancial.html'))
 end
 
-# SKY FINANCIAL MERCHANT PORTAL
+
+# SKY FINANCIAL MERCHANT PORTAL (MP)
 get '/skyfinancial' do
   File.read(File.join('public','skyfinancial.html'))
 end
