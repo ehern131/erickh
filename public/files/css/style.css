@@ -491,6 +491,10 @@ body.loader-dot div.wpcf7 .ajax-loader::before {
 	}
 
 
+.project_header {
+	font-weight: 400;
+}
+
 /* Table
 ---------------------------------------- */
 table {
@@ -3509,6 +3513,7 @@ div[class*='spacer-'] { display: block; }
 .spacer-small { height: 40px; }
 .spacer-medium { height: 60px; }
 .spacer-big { height: 80px; }
+.spacer-large { height: 90px; }
 
 div[class*='spacer-'] + p, div[class*='spacer-'] + div, cdiv[class*='spacer-'] + blockquote, div[class*='spacer-'] + ul,
 div[class*='spacer-'] + h1, div[class*='spacer-'] + h2, div[class*='spacer-'] + h3, div[class*='spacer-'] + h4, div[class*='spacer-'] + h5, div[class*='spacer-'] + h6 { margin-top: 0px !important; }
