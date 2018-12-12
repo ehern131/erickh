@@ -43,6 +43,15 @@ get '/qualitycruises2' do
   File.read(File.join('public','qualitycruises2.html'))
 end
 
+# QUALITY CRUISES
+get '/mylease' do
+  File.read(File.join('public','mylease.html'))
+end
+# QUALITY CRUISES
+get '/lease' do
+  File.read(File.join('public','mylease.html'))
+end
+
 
 # TEST PAGES (FUTURE TEMPLATE)
 get '/portfolio-classic' do
