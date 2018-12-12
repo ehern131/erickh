@@ -3,7 +3,7 @@ require 'sinatra'
 
 # WORK INDEX
 get '/' do
-  File.read(File.join('public','index.html'))
+  File.read(File.join('public','construction.html'))
 end
 get '/index' do
   File.read(File.join('public','index.html'))
