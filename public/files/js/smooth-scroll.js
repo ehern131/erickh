@@ -1,5 +1,12 @@
 var html, body;
 
+var scroll = new SmoothScroll('a[href*="#"]', {
+
+	// Selectors
+	ignore: '[data-scroll-ignore]'
+
+});
+
 window.onload = function() {
   //getting all anchor elements
   var links = document.links;
