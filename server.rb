@@ -43,13 +43,22 @@ get '/qualitycruises2' do
   File.read(File.join('public','qualitycruises2.html'))
 end
 
-# QUALITY CRUISES
+# MYLEASE
 get '/mylease' do
   File.read(File.join('public','mylease.html'))
 end
-# QUALITY CRUISES
+# MYLEASE
 get '/lease' do
   File.read(File.join('public','mylease.html'))
+end
+
+# CONTACT
+get '/contact' do
+  File.read(File.join('public','contact.html'))
+end
+# MYLEASE
+get '/connect' do
+  File.read(File.join('public','contact.html'))
 end
 
 
