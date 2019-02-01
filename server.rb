@@ -15,6 +15,14 @@ get '/work' do
   File.read(File.join('public','index.html'))
 end
 
+# ABOUT
+get '/about' do
+  File.read(File.join('public','about.html'))
+end
+get '/erick' do
+  File.read(File.join('public','about.html'))
+end
+
 
 # MOLLIE FINANCIAL LEASE MANAGEMENT SYSTEM (LMS)
 get '/molliefinancial' do
