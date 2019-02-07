@@ -26,6 +26,8 @@ https://flickity.metafizzy.co
   margin-right: 10px;
 }
 
+
+
 /* NEW EDITS */
 /* external css: flickity.css */
 
@@ -76,7 +78,7 @@ body { font-family: sans-serif; }
 
 @media screen and ( min-width: 768px ) {
   .carousel-cell {
-    height: 400px;
+    height: 600px;
   }
 }
 
