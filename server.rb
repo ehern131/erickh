@@ -40,6 +40,9 @@ end
 get '/skyfinancial2' do
   File.read(File.join('public','skyfinancial2.html'))
 end
+get '/sky' do
+  File.read(File.join('public','skyfinancial2.html'))
+end
 
 
 # QUALITY CRUISES

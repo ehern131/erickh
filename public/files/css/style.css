@@ -868,7 +868,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	#hero.hero-fullscreen.content-overlay + #page-body { margin-top: -100px; }
 	#header:not(.sticky) + #hero-and-body #hero.hero-fullscreen.content-overlay + #page-body { margin-top:  calc(0px - 160px - 100px - 30px); }  /* Logo Height */
 
-	.wrapper-small, .wrapper-medium { width: 780px; margin: 0 auto; max-width: calc(100% - 200px); }
+	.wrapper-small, .wrapper-medium { width: 780px; margin: 0 auto; max-width: calc(100% - 00px); }
 	.wrapper-medium { width: 1024px; }
 	.wrapper-small.push-left { margin: 0; }
 	.wrapper::after, .wrapper-small::after, .wrapper-medium::after { content: ""; display: block; clear: both; visibility: hidden; font-size: 0;  height: 0; }
