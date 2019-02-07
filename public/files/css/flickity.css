@@ -22,10 +22,9 @@ https://flickity.metafizzy.co
 
 .carousel-cell {
   width: 100%;
-  height: 200px;
+  height: 400px;
   margin-right: 10px;
 }
-
 
 
 /* NEW EDITS */
@@ -78,7 +77,7 @@ body { font-family: sans-serif; }
 
 @media screen and ( min-width: 768px ) {
   .carousel-cell {
-    height: 600px;
+    height: 400px;
   }
 }
 
