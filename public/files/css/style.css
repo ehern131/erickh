@@ -3153,6 +3153,10 @@ body.limit-full .fullwidth-section.forcefullwidth .fullwidth-content { width: ca
 	padding: 0;
 }
 
+.mt-2 {
+	margin-top: 90px !important;
+}
+
 /* overlay caption */
 .thumb-hover .overlay-caption {
 	position: absolute;
