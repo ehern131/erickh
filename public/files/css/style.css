@@ -13,6 +13,35 @@ ol, ul {
 :focus {
 	outline: 0;
 }
+
+.mt-1 {
+	margin-top: 10px !important;
+}
+.mt-2 {
+	margin-top: 20px !important;
+}
+.mt-3 {
+	margin-top: 30px !important;
+}
+.mt-4 {
+	margin-top: 40px !important;
+}
+.mt-5 {
+	margin-top: 50px !important;
+}
+.mt-6 {
+	margin-top: 60px !important;
+}
+.mt-7 {
+	margin-top: 70px !important;
+}
+.mt-8 {
+	margin-top: 80px !important;
+}
+.mt-9 {
+	margin-top: 90px !important;
+}
+
 /* deleting the default appearence for form elements */
 input[type=text], input[type=password], input[type=submit], input[type=number], input[type=button], textarea, button, select {
 	-moz-appearance: none;
@@ -3781,9 +3810,6 @@ body.limit-full .fullwidth-section.forcefullwidth .fullwidth-content {
 	position: relative;
 	margin: 0;
 	padding: 0;
-}
-.mt-2 {
-	margin-top: 90px !important;
 }
 /* overlay caption */
 .thumb-hover .overlay-caption {
