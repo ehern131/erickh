@@ -50,6 +50,18 @@ get '/qualitycruises' do
   File.read(File.join('public','qualitycruises.html'))
 end
 # QUALITY CRUISES
+get '/quality' do
+  File.read(File.join('public','qualitycruises.html'))
+end
+# QUALITY CRUISES
+get '/cruises' do
+  File.read(File.join('public','qualitycruises.html'))
+end
+# QUALITY CRUISES
+get '/qc' do
+  File.read(File.join('public','qualitycruises.html'))
+end
+# QUALITY CRUISES
 get '/qualitycruises2' do
   File.read(File.join('public','qualitycruises2.html'))
 end
