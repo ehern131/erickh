@@ -23,7 +23,6 @@ get '/erick' do
   File.read(File.join('public','about.html'))
 end
 
-
 # MOLLIE FINANCIAL LEASE MANAGEMENT SYSTEM (LMS)
 get '/molliefinancial' do
   File.read(File.join('public','molliefinancial.html'))
