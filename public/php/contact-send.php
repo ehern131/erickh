@@ -1,13 +1,6 @@
 <?php
 
 require_once('phpmailer/class.phpmailer.php');
-$mail->IsSMTP();
-$mail->Host = "smptp.gmail.com";
-$mail->SMTPDebug = 2;
-$mail->SMTPAuth = true;
-$mail->Port = 465;
-$mail->Username = "ehern131@gmail.com";
-$mail->Password = "Sony12345";
 $mail = new PHPMailer();
 
 if( $_POST['name'] != '' AND $_POST['email'] != '' AND $_POST['message'] != '' ) {

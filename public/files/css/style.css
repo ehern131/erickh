@@ -3595,7 +3595,7 @@ body.loader-dot .lazy-wrapper .lazy-icon:before {
 }
 /*----------------------------------------------15. COLUMNS SECTION------------------------------------------------*/
 .column-section {
-	margin-top: 50px;
+	margin-top: 0px;
 }
 .column-section.sticky-section {
 	position: relative;
