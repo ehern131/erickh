@@ -75,11 +75,20 @@ get '/lease' do
   File.read(File.join('public','mylease.html'))
 end
 
+# OTHER
+get '/other' do
+  File.read(File.join('public','other.html'))
+end
+# MYLEASE
+get '/otherwork' do
+  File.read(File.join('public','other.html'))
+end
+
 # CONTACT
 get '/contact' do
   File.read(File.join('public','contact.html'))
 end
-# MYLEASE
+# CONTACT
 get '/connect' do
   File.read(File.join('public','contact.html'))
 end
