@@ -9,7 +9,7 @@ $mail->SMTPAuth = Login;
 $mail->Host = "smtp.gmail.com";
 $mail->Port = 587;
 $mail->Username = "ehern131@gmail.com";
-$mail->Password = "Sony12345";
+$mail->Password = "FIX THIS";
 
 if( $_POST['name'] != '' AND $_POST['email'] != '' AND $_POST['message'] != '' ) {
 
