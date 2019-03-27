@@ -1,55 +1,46 @@
 <?php
+// Import PHPMailer classes into the global namespace
+// These must be at the top of your script, not inside a function
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-require_once('phpmailer/class.phpmailer.php');
-$mail = new PHPMailer();
+// Load Composer's autoloader
+require 'vendor/autoload.php';
 
-if( $_POST['name'] != '' AND $_POST['email'] != '' AND $_POST['message'] != '' ) {
+// Instantiation and passing `true` enables exceptions
+$mail = new PHPMailer(true);
 
-	$recipientemail = "ehern131@gmail.com"; // Your Email Address
-	$recipientname = "Erick Hernandez"; // Your Name
+try {
+    //Server settings
+    $mail->SMTPDebug = 2;                                       // Enable verbose debug output
+    $mail->isSMTP();                                            // Set mailer to use SMTP
+    $mail->Host       = 'smtp1.example.com;smtp2.example.com';  // Specify main and backup SMTP servers
+    $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
+    $mail->Username   = 'user@example.com';                     // SMTP username
+    $mail->Password   = 'secret';                               // SMTP password
+    $mail->SMTPSecure = 'tls';                                  // Enable TLS encryption, `ssl` also accepted
+    $mail->Port       = 587;                                    // TCP port to connect to
 
-	$name = stripslashes($_POST['name']);
-	$email = trim($_POST['email']);
-	$message = stripslashes($_POST['message']);
-	$subject = stripslashes($_POST['subject']);
-	$check = $_POST['form-check'];
+    //Recipients
+    $mail->setFrom('from@example.com', 'Mailer');
+    $mail->addAddress('joe@example.net', 'Joe User');     // Add a recipient
+    $mail->addAddress('ellen@example.com');               // Name is optional
+    $mail->addReplyTo('info@example.com', 'Information');
+    $mail->addCC('cc@example.com');
+    $mail->addBCC('bcc@example.com');
 
-	$custom = $_POST['fields'];
-	$custom = explode(',', $custom);
+    // Attachments
+    $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
+    $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 
-	$message_addition = '';
-	foreach ($custom as $c) {
-		if ($c !== 'name' && $c !== 'email' && $c !== 'message' && $c !== 'subject') {
-			$message_addition .= '<b>'.$c.'</b>: '.$_POST[$c].'<br />';
-		}
-	}
+    // Content
+    $mail->isHTML(true);                                  // Set email format to HTML
+    $mail->Subject = 'Here is the subject';
+    $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
+    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
-	if ($message_addition !== '') {
-		$message = $message.'<br /><br />'.$message_addition;
-	}
-
-	if ($check == '') {
-
-		$mail->SetFrom( $email , $name );
-		$mail->AddReplyTo( $email , $name );
-		$mail->AddAddress( $recipientemail , $recipientname );
-		$mail->Subject = $subject;
-
-		$mail->MsgHTML( $message );
-		$sendEmail = $mail->Send();
-
-		if( $sendEmail == true ) {
-			echo '	<div class="alert-confirm">
-						<p>Your message has been send</p>
-					</div>';
-		} else {
-			echo '	<div class="alert-error">
-						<p>Email could not be sent due to some Unexpected Error</p>
-						<p>Reason: ' . $mail->ErrorInfo . '</p>
-					</div>';
-		}
-
-	}
-
+    $mail->send();
+    echo 'Message has been sent';
+} catch (Exception $e) {
+    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
-?>
