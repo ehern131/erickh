@@ -3,7 +3,7 @@ require 'sinatra'
 
 # WORK INDEX
 get '/' do
-  File.read(File.join('public','construction.html'))
+  File.read(File.join('public','index.html'))
 end
 get '/index' do
   File.read(File.join('public','index.html'))
@@ -30,6 +30,9 @@ end
 get '/mollie' do
   File.read(File.join('public','molliefinancial.html'))
 end
+get '/mf' do
+  File.read(File.join('public','skyfinancial2.html'))
+end
 
 
 # SKY FINANCIAL MERCHANT PORTAL (MP)
@@ -40,6 +43,9 @@ get '/skyfinancial2' do
   File.read(File.join('public','skyfinancial2.html'))
 end
 get '/sky' do
+  File.read(File.join('public','skyfinancial2.html'))
+end
+get '/sf' do
   File.read(File.join('public','skyfinancial2.html'))
 end
 
@@ -72,6 +78,9 @@ end
 # MYLEASE
 get '/lease' do
   File.read(File.join('public','mylease.html'))
+end
+get '/ml' do
+  File.read(File.join('public','skyfinancial2.html'))
 end
 
 # OTHER
