@@ -2071,7 +2071,7 @@ body.limit-full #hero {
 }
 #hero:not(.no-bg) #page-title:not(.wrapper-small) {
 	width: calc(100% - 80px);
-	padding-left: 40px;
+	padding-left: 0px;
 	padding-right: 40px;
 }
 #hero.no-bg #page-title {
