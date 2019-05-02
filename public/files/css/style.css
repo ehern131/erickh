@@ -78,6 +78,7 @@ audio:not([controls]) {
 	*display: inline-block;
 	height: 1%;
 }
+
 .team-member {
 	text-align: center;
 }
