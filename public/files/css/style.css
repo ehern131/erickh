@@ -1774,8 +1774,8 @@ nav#main-nav ul>li>a {
 	/* workaround bottom margin */
 }
 #menu.classic nav#main-nav>ul>li>a {
-	font-weight: 500;
-	font-size: 13px;
+	font-weight: 700;
+	font-size: 14px;
 	line-height: 20px;
 	letter-spacing: .08em;
 	text-transform: uppercase;
