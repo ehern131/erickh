@@ -23,6 +23,14 @@ get '/erick' do
   File.read(File.join('public','about.html'))
 end
 
+
+get '/graphicdesign' do
+  File.read(File.join('public','graphicdesign.html'))
+end
+get '/gd' do
+  File.read(File.join('public','graphicdesign.html'))
+end
+
 # MOLLIE FINANCIAL LEASE MANAGEMENT SYSTEM (LMS)
 get '/molliefinancial' do
   File.read(File.join('public','molliefinancial.html'))
