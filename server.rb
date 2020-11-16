@@ -31,6 +31,37 @@ get '/gd' do
   File.read(File.join('public','graphicdesign.html'))
 end
 
+
+# LEADCONDUIT ACTIVE PROSPECT
+get '/leadconduit' do
+  File.read(File.join('public','leadconduit.html'))
+end
+get '/lc' do
+  File.read(File.join('public','leadconduit.html'))
+end
+get '/leads' do
+  File.read(File.join('public','leadconduit.html'))
+end
+get '/aplc' do
+  File.read(File.join('public','leadconduit.html'))
+end
+
+
+# TRUSTEDFORM ACTIVEPROSPECT
+get '/trustedform' do
+  File.read(File.join('public','trustedform.html'))
+end
+get '/tf' do
+  File.read(File.join('public','trustedform.html'))
+end
+get '/tcpa' do
+  File.read(File.join('public','trustedform.html'))
+end
+get '/aptf' do
+  File.read(File.join('public','trustedform.html'))
+end
+
+
 # MOLLIE FINANCIAL LEASE MANAGEMENT SYSTEM (LMS)
 get '/molliefinancial' do
   File.read(File.join('public','molliefinancial.html'))
@@ -39,7 +70,7 @@ get '/mollie' do
   File.read(File.join('public','molliefinancial.html'))
 end
 get '/mf' do
-  File.read(File.join('public','skyfinancial2.html'))
+  File.read(File.join('public','molliefinancial.html'))
 end
 
 
